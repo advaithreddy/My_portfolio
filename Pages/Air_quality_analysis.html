@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advaith Reddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Back</a>
+            <h1>Air Quality Analysis Prediction</h1>
+            <div class="line-break"></div>
+            <ul>
+                <li><a href="https://github.com/advaithreddy/Air-Pollution-Analysis" target="_blank">Source code</a></li>
+            </ul>
+
+            <summary>Prerequisites</summary>
+            <ul>
+                <li>Machine Learning Algorithms</li>
+                <li>Supervised Learning Techinques</li>
+                <li>Python Language</li>
+            </ul>
+            <Summary>Description</Summary>
+            <p>This project analyzes an air quality dataset that contains the responses of a gas multisensor device deployed on the 
+                field in an Italian city. Some exploratory data analysis, a regression analysis and model selection is performed in 
+                Python using Pandas, Numpy, Sesborn and Scikit-learn for this project. Each python notebook has markdown explaining each part of my analysis.</p>
+
+            <summary>Dataset</summary>
+            <p>
+                This dataset contains 9358 instances of hourly averaged responses from an array of 5 metal oxide 
+                chemical sensors embedded in an Air Quality Chemical Multisensor Device. The device was located on 
+                the field in a significantly polluted area, at road level,within an Italian city. Data were recorded 
+                from March 2004 to February 2005 (one year)representing the longest freely available recordings of on 
+                field deployed air quality chemical sensor devices responses. More about this 
+                <a href="https://archive.ics.uci.edu/ml/datasets/Air+Quality" target="_blank">Dataset</a>.
+            </p>
+
+            <summary>Dataset Features</summary>
+            <ul>
+                <li>Date (DD/MM/YYYY)</li>
+                <li>Time (HH.MM.SS)</li>
+                <li>CO(GT) - True hourly averaged concentration CO in mg/m^3 (reference analyzer)</li>
+                <li>PT08.S1 (tin oxide) hourly averaged sensor response (nominally CO targeted)</li>
+                <li>NMHC(GT) - True hourly averaged overall Non Metanic HydroCarbons concentration in microg/m^3 (reference analyzer)</li>
+                <li>C6H6(GT) - True hourly averaged Benzene concentration in microg/m^3 (reference analyzer)</li>
+                <li>PT08.S2 (titania) hourly averaged sensor response (nominally NMHC targeted)</li>
+                <li>NOx(GT) - True hourly averaged NOx concentration in ppb (reference analyzer)</li>
+                <li>PT08.S3 (tungsten oxide) hourly averaged sensor response (nominally NOx targeted)</li>
+                <li>NO2(GT) - True hourly averaged NO2 concentration in microg/m^3 (reference analyzer)</li>
+                <li>PT08.S4 (tungsten oxide) hourly averaged sensor response (nominally NO2 targeted)</li>
+                <li>PT08.S5 (indium oxide) hourly averaged sensor response (nominally O3 targeted)</li>
+                <li>T - Temperature in Â°C</li>
+                <li>RH - Relative Humidity (%)</li>
+                <li>AH - Absolute Humidity</li>
+            </ul>
+            <summary>Regression Tasks</summary>
+            <p>
+                The task is to predict the Air Quality given the other measurements in the dataset.
+                The dataset has columns Date, Time, CO(GT), PT08.S1(CO), NMHC(GT), C6H6(GT), PT08.S2(NMHC), NOx(GT), PT08.S3(NOx), NO2(GT), PT08.S4(NO2), PT08.S5(O3), T, RH, and AH. The desired target variable is the temperature (T).
+            </p>
+
+            <summary>Why Air Predict Quality</summary>
+            <p>
+                Being able to model, predict, and monitor air quality is becoming more and more relevant, especially in urban areas, due to the critical impact of air pollution on citizens’ health and the environment. Accurate forecasting helps people plan ahead, decreasing the effects on health and the costs associated.
+            </p>
+
+            <summary>Results</summary>
+            <ul>
+                <li>The R^2 (coefficient of determination) of the regression model is 0.9299834598762752. or ~93% meaning that ~93% of the data points fall on the regression line and ~93% of the independent/predictor variables in this model explain all the variation in y (Temperature).</li>
+                <li>The residuals show us that the residuals are spread out around the regression line but pretty close to it.</li>
+                <li>The coefficients tell us the relationship between the temperature and the other features. When the temperature increases by one C6H6 decreases by 0.41, PT08.S2(NMHC) increases by 0.009, NOx increases by 0.001, PT08.S3(NOx) increases by 0.001, NO2 decreases by 0.003, PT08.S4(NO2) increases by 0.005, RH decreases by 0.349 and AH increases by 14.39.</li>
+                <li>The MSE is 5.18. In other words, the average squared difference between the observed and predicted values is 5.18.</li>
+                <li>The predictors aren't perfect but it is a good fit, given that ~93% of the independent/predictor variables in this model explain all the variation in y and the amount of error in a model isn't extreme. Therefore, the model fits the data well.</li>
+                <li>This model would be pretty accurate at predicting air quality, allowing people to plan ahead, decreasing the effects on health and the costs associated.</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advaith Reddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Back</a>
+            <h1>Shell - Operating Systems, Linux, Shell</h1>
+            <div class="line-break"></div>
+            <ul>
+                <li><a href="#">Source code</a>&nbsp; &nbsp; <span class="tooltip"> ℹ️<span class="info-text">Working on the Project will be uploaded soon.</span></span></li>
+            </ul>
+            <h4>Shell - A Linux Shell in C</h4>
+
+            <summary>Prerequisites</summary>
+            <ul>
+                <li>Introduction to Operating Systems</li>
+                <li>Linux kernal</li>
+                <li>Usage of Command Prompt</li>
+            </ul>
+            <summary>Description</summary>
+            <p>The Linux Shell Operating System project is a command-line based operating system that provides a lightweight 
+                and efficient environment for users to interact with the underlying Linux kernel. Built around the concept of 
+                a shell, it allows users to execute commands, manage files, run programs, and perform various tasks efficiently 
+                through the terminal interface.</p><hr>
+                <p>This project is a modification of the original work by <a href="https://www.linkedin.com/in/karmanjyot-singh/" target="_blank">Karmanjyot Singh</a>, which focused on karma-Shell OS based on Linux kernal.
+                    I thoroughly studied and analyzed his implementation and made specific 
+                    enhancements to tailor it for my Understanding skills of OS and Linux kernal.</p>
+            <summary>Contributions</summary>
+            <ul>
+                <li>Reviewed and understood the existing codebase to grasp the project's architecture and functionality.</li>
+                <li>Identified areas of improvement and optimization, resulting in:</li>
+                <ol>
+                    <li><strong>Command Execution Optimization</strong>
+                        Refined the command execution process to reduce system call overhead and improve the overall responsiveness of the shell. 
+                        This optimization led to faster command execution, enhancing user productivity.
+                    </li>
+                    <li><strong>Kernal-specific system commands</strong>
+                        Added kernel-specific system commands to provide users with direct access to kernel features and statistics, 
+                        offering deeper insights into system performance and behavior.
+                    </li>
+                </ol>
+            </ul>
+            <summary>Credit</summary>
+            <p>I express my gratitude to <a href="https://www.linkedin.com/in/karmanjyot-singh/" target="_blank">Karmanjyot Singh</a> for their pioneering work on the "karma-shell" project.
+                My contributions to this modified version build upon the original groundwork, and I acknowledge 
+                <a href="https://www.linkedin.com/in/karmanjyot-singh/" target="_blank">Karmanjyot Singh</a> for their significant contributions to this project.</p>
+            <summary>Execution Instructions</summary>
+            <ul>
+                <li> run `make` to create an executable `shell`</li>
+                <li> run command `./shell` in the terminal , and there the shell runs.</li>
+            </ul>
+            <summary>Introduction</summary>
+            <p>This is Linux - C Shell </p>
+            <ul>
+                <li>To exit the Shell</li>
+                <ol>
+                    <li>Press <kbd>Ctrl + D</kbd> , saves the current session history , and exits the terminal </li>
+                    <li>enter `exit` command in terminal.</li>
+                    <li><summary>Assumptions</summary>
+                        <ol>
+                            <li>note that : `max_length` of command names are assumed to be of max-length `name_len` defined in `header.h` as `1024`</li>
+                            <li>`history` command displays the `10` last commands entered , with latest command on the top.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </ul>
+
+            <summary>Shell Features</summary>
+            <ol>
+                <li>The shell supports the following commands being implemented by me : `bg` , `baywatch` , `cd` , `echo` , `fg` , `history` , `jobs` , `ls` , `pinfo` , `pwd` , `replay` , `repeat` , `sig` , and other external `shell commands` .</li>
+                <li>It with support for `redirection` operations [ `>` , `<` , `>>` ] and `piping` [ `|` ] .</li>
+                <li>Error Handling</li>
+                <li>Signal Handling for signals like `SIGINT` , `SIGTSTP` , `SIGCHLD` and external keyboard interrupts like <kbd>Ctrl +C</kbd> , <kbd>Ctrl + Z</kbd>.</li>
+                <li> Running processes in `foreground` & `background` environments along with </li>
+                <li>Command `history` implemented, storing the latest commands , that remains saved across shell-sessions.</li>
+                <li>Multiple commands separated by `;` handled, However there's no support for handling `"` or `'` ( quotes ).</li>
+            </ol>
+
+            <p>Command implementation are here <a href="/assets/Implmentation_cmd.md">[Refer this]</a> and if you want to check out the Ground Work that's <a href="https://github.com/KARMANJYOTSINGH/SHELL-KARMA" target="_blank">here</a>.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    /* --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251); */
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:#CEE6F3;
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+
+}
+
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
+}
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+ 
+hr {
+border: 1px solid #ddd; 
+margin: 10px 0; 
+}
+
+
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s; 
+}
+  
+#profile-pic:hover {
+    transform: scale(1.1);
+}
+  
+  
+  
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#socials--list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    position: relative;
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+#socials--list a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: inherit; /* Use the same color as the link text */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+#socials--list a:hover {
+    font-weight: 100;
+    color: #F4D160;
+}
+
+#socials--list a:hover::before {
+    transform: scaleX(1);
+}
+
+#socials--list a#twt:hover {
+    color: #75C2F6;
+}
+
+#socials--list a#twt:hover::before {
+    background-color: #75C2F6;
+}
+
+#socials--list a#lee:hover {
+    color: #F4D160;
+}
+
+#socials--list a#lee:hover::before {
+    background-color: #F4D160;
+}
+
+#socials--list a#lin:hover {
+    color: #068FFF;
+}
+
+#socials--list a#lin:hover::before {
+    background-color: #068FFF;
+}
+
+#socials--list a#res:hover {
+    color: #F5F5F5;
+}
+
+#socials--list a#res:hover::before {
+    background-color: #F5F5F5;
+}
+
+#socials--list a#git:hover {
+    color: #A076F9;
+}
+
+#socials--list a#git:hover::before {
+    background-color: #A076F9;
+}
+
+
+
+/* Added */
+/* Adjust the margins and paddings for the resume headings */
+.resume-heading, .resume-subheading, .resume-dates {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  /* Add margin between the lines to control the gap */
+  .resume-heading, .resume-dates {
+    margin-bottom: 5px; 
+  }
+  
+  .resume-heading {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .resume-subheading {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .resume-dates {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+/* End */
+
+#qualifications--list{
+    list-style: none;
+}
+
+
+/* Added Tech skills CSS */
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+.card--techstack {
+    border: 0.001px solid var(--mainBorderColor);
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card--techstack:hover {
+    background-color: var(--mainBgColor-dark);
+    transform: translateY(-2px);
+}
+
+.card--techstack span {
+    text-align: center;
+    width: 100%;
+}
+
+/* Define your main border color variable */
+:root {
+    --mainBorderColor: #ccc;
+} 
+
+
+.card--techstack .hover-text {
+    opacity: 0;
+}
+
+/* .card--techstack:hover .tech-text {
+    opacity: 0;
+} */
+
+.card--techstack:hover .hover-text {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+/* End of Tech Skills CSS */
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+/* Added */
+li a {
+    position: relative; /* Enable positioning for the pseudo-element */
+    text-decoration: none; /* Remove the default underline */
+    color: #EEEDED; /* Set the link color */
+    transition: color 0.3s ease; /* Add smooth transition for the link color change */
+}
+
+/* Pseudo-element for the underline */
+li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFCACC; /* Set the color of the underline */
+    transition: width 0.3s ease; /* Add smooth transition for the width change */
+}
+
+/* Hover effect styles */
+li a:hover {
+    color: #D7BBF5; /* Change the link color on hover */
+}
+
+/* Hover effect for the underline */
+li a:hover::before {
+    width: 100%; /* Expand the width of the underline to 100% on hover */
+}
+/* Add ended */
+
+/* Timer */
+.launch-timer{
+    display: flex;
+    font-size: 18px;
+}
+
+.launch-timer{
+    margin: 0 5px;
+}
+
+.launch-timer div p{
+    font-size: 30px;
+    margin-bottom: -6px;
+}
+
+li.info-text {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .info-text {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  
+  .tooltip:hover .info-text {
+    display: block;
+  }
+  
+
+@media(max-width:600px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}

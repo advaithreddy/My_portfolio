@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advaith Reddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Back</a>
+            <h1>Churn Rate Prediction</h1>
+            <div class="line-break"></div>
+            <ul>
+                <li><a href="https://github.com/advaithreddy/churn_rate" target="_blank">Source code</a></li>
+            </ul>
+            <summary>Prerequisites</summary>
+            <ul>
+                <li>Basics of Natural language processing</li>
+                <li>Python Programming</li>
+                <li>Proficiency in MySQL</li>
+            </ul>
+            <summary>Description</summary>
+            <p>IBM Employee Churn Case Study</p>
+            <p>As a Senior Business Analyst as IBM, the 
+                latest company report was released and the employee retention rate has dropped to 84%.</p>
+            <p>
+                My Project Aim is to discover what the key drivers are for employees churning and predict IBM employees at risk of churning. 
+                We as team have already done the project for NLP Course work as mini-project and we thought that a Decision Tree or Gaussian NB machine model 
+                is best for prediction, but now i want 
+                to fit another classifier and compare it to the ones we did as a team drafted and use exploratory data analysis, visualizations 
+                and accuracy scores to make recommendations for IBM to increase employee retention and choose the best performing model.
+            </p>
+            <p><u>Tools used:</u> SQL, Python and Power BI</p>
+            <p><u>Skills used:</u> JOINS, AGGREGATE FUNCTIONS, CREATING VIEWS, Machine Learning, Data Visualizations, Data Analysis</p>
+            <br>
+            <h3>Findings</h3>
+            <summary>KPIs and Metrics</summary>
+            <p>There are 1470 employees at IBM. 1233 of those employees have stayed with the company while 237 have churned. Of the 1470, 31% of employees are very satisfied with their jobs.
+                The attrition rate is 16.12%. Males are churning the most at IBM. Employees between the ages of 30 to 39 are churning the most. The second group is aged between 20 and 29. 
+                
+                By department, the Research & Development department has the most churners. The Sales department is close behind it. Lab Technicians, Sales Executives and Research Scientists are roles experiencing the most churning. These roles are in the Research & Development and Sales departments. </p>
+            <summary>Satisfaction on Job</summary>
+            <p>Each satisfaction rating is on a scale with 1 being low and 4 very high (1: Low, 2 :Medium, 3 :High, 4 :Very High). Employees are between Medium and High for satisfaction with environment, relationships, work life balance and their overall job. Job satisfaction is the highest among employees in the sales department and in the age group of <20. This shows that job satisfaction isn’t indicative of employee churn.</p>
+
+            <summary>Correlations and Other relationships</summary>
+            <p>There is a strong correlation between years at company and years with current manager and years at company and years in current role. The scatter plots show that the longer an employee stays at IBM, the longer they stay with the same manager in the same position. This is indicative that lack of promotion may be causing attrition. When we click on the group that has the most churning (30-39), the correlation is even stronger (~80%).
+
+                There isn’t much opportunity for growth or promotion, especially for those between the ages of 30 and 39. This same age group received the least training time. Males also received the least training time and these two groups experience the most attrition. This is indicative that lack of professional training may be a key driver of employee churn.</p>
+
+            <summary>Model Selection</summary>
+            <p>I found that the Logistic Regression classifier is the best predicting the risk of employees churning when compared the the Decision Tree and Gaussian NB models that my team suggested. To improve accuracy I could try different models or use more training data.</p>
+
+            
+        </div>
+    </body>
+</html>
