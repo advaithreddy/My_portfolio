@@ -143,6 +143,14 @@ margin: 10px 0;
     background-color: #75C2F6;
 }
 
+#socials--list a#dri:hover {
+    color: #ED7B7B;
+}
+
+#socials--list a#dri:hover::before {
+    background-color: #ED7B7B;
+}
+
 #socials--list a#lee:hover {
     color: #F4D160;
 }
