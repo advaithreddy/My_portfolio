@@ -159,13 +159,13 @@ margin: 10px 0;
     background-color: #F4D160;
 }
 
-#socials--list a#lin:hover {
+/* #socials--list a#lin:hover {
     color: #068FFF;
 }
 
 #socials--list a#lin:hover::before {
     background-color: #068FFF;
-}
+} */
 
 #socials--list a#res:hover {
     color: #F5F5F5;
@@ -182,6 +182,61 @@ margin: 10px 0;
 #socials--list a#git:hover::before {
     background-color: #A076F9;
 }
+
+#socials--list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    display: flex;
+    align-items: center; /* Center logo and text vertically */
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+
+#socials--list a img {
+    width: 20px; /* Set the desired width for the logo */
+    margin-right: 5px; /* Add some spacing between logo and text */
+}
+
+#socials--list a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+#socials--list a:hover {
+    font-weight: 100;
+    color: #F4D160;
+}
+
+#socials--list a:hover::before {
+    transform: scaleX(1);
+}
+
+#socials--list a#lin:hover {
+    color: #068FFF;
+}
+
+#socials--list a#lin:hover::before {
+    background-color: #068FFF;
+}
+
 
 
 
@@ -283,8 +338,7 @@ margin: 10px 0;
 }
 
 .card--project a:hover{
-    color: rgb(30, 190,214);
-
+    color: #7895CB;
 }
 
 .card--work-history{
