@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advaith Reddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="icon" href="assets/images/logo.png">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Back</a>
+            <h1>Shell - Operating Systems, Linux, Shell</h1>
+            <div class="line-break"></div>
+            <ul>
+                <li><a href="#">Source code</a>&nbsp; &nbsp; <span class="tooltip"> ℹ️<span class="info-text">Working on the Project will be uploaded soon.</span></span></li>
+            </ul>
+            <h4>PrepCloud - Cloud Storage Service</h4>
+
+            <div class="launch-timer">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+            <script>
+                var countDownDate = new Date("Nov 29, 2023 00:00:00").getTime();
+                var x = setInterval(function(){
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 *60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("days").innerHTML = days;
+                    document.getElementById("hours").innerHTML = hours;
+                    document.getElementById("minutes").innerHTML = minutes;
+                    document.getElementById("seconds").innerHTML = seconds;
+
+                },1000);
+            </script>
+
+        </div>
+    </body>
+</html>

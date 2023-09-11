@@ -385,34 +385,58 @@ li a:hover::before {
 /* Add ended */
 
 /* Timer */
-.launch-timer{
+
+.launch-timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.launch-timer div {
     display: flex;
-    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.s ease;
 }
 
-.launch-timer{
+.launch-timer div:hover {
+    background-color: #ccc;
+}
+
+.launch-timer p, .launch-timer span {
     margin: 0 5px;
+    font-size: 24px;
 }
 
-.launch-timer div p{
-    font-size: 30px;
-    margin-bottom: -6px;
+.launch-timer p {
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
+
+.launch-timer p:hover {
+    background-color: #333;
+}
+
+
 
 li.info-text {
     list-style: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  .tooltip {
+}
+
+.tooltip {
     position: relative;
     cursor: pointer;
-  }
-  
-  .info-text {
+}
+
+.info-text {
     display: none;
     position: absolute;
     bottom: 100%;
@@ -427,12 +451,12 @@ li.info-text {
     font-size: 14px;
     line-height: 1.4;
     white-space: nowrap;
-  }
-  
-  .tooltip:hover .info-text {
-    display: block;
-  }
-  
+}
+
+.tooltip:hover .info-text {
+display: block;
+}
+
 
 @media(max-width:600px){
 
