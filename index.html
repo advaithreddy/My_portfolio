@@ -13,7 +13,7 @@
         <div id="container--main">
             <!-- Head Main -->
             <section id="wrapper--hero" class="section--page">
-                <!-- <img id="profile-pic" src="assets/images/Pro_pic.jpg"> -->
+                <img id="profile-pic" src="assets/images/Pro_pic.jpg">
 
                 <div>
                     <style>
@@ -38,11 +38,13 @@
                     <div class="name">
                         Advaith Reddy <span class="last-name">Baddam</span>
                     </div><hr>
-                    <p id="bio">Software developer, Entrepreneur, Engineering Trainee @<a href="https://www.pwc.in/" 
-                        target="_blank">PwC</a>, provisional tutor @<a href="https://kalasalingam.ac.in/" 
-                        target="_blank">KARE</a><br>Research Intern @<a href="https://www.qxresearch.org/">qxResearch AI</a>
+                    <p id="bio">Aspiring Software developer, Entrepreneur, Engineering Trainee @<a href="https://www.pwc.in/" 
+                        target="_blank">PwC</a>, Research Intern @<a href="https://www.qxresearch.org/">qxResearch AI</a>
                         ,  Hyderabadi 🖤.
                     </p>
+
+                    <!-- provisional tutor @<a href="https://kalasalingam.ac.in/" 
+                        target="_blank">KARE</a>, -->
                     <p id="email"><a href="mailto:advaithbaddam5@gmail.com" target="_blank"><img src="assets/images/gmail.png" alt="mail" style="width: 1.1em; height: 0.9em;"> advaithbaddam5@gmail.com</a></p>
                     <!-- <p id="email"><a href="mailto:advaithbaddam5@gmail.com" target="_blank"><img src="assets/images/gmail.png" alt="">advaithbaddam5@gmail.com</a></p> -->
                 </div>  
@@ -106,10 +108,10 @@
             <section class="section--page">
                 <h2>Courses</h2>
                 <ul id="qualifications--list">
-                    <li><img src="assets/images/right-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Operating Systems</li>
-                    <li><img src="assets/images/right-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Computer networks</li>
-                    <li><img src="assets/images/right-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Database Management System</li>
-                    <li><img src="assets/images/right-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Object Oriented Programming</li>
+                    <li><img src="assets/images/blue-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Operating Systems</li>
+                    <li><img src="assets/images/blue-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Computer networks</li>
+                    <li><img src="assets/images/blue-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Database Management System</li>
+                    <li><img src="assets/images/blue-arrow.png" alt="Course Icon" style="width: 1em; height: 1em;"> Object Oriented Programming</li>
                 </ul>
             </section>
             <!-- End Courses -->
@@ -143,7 +145,7 @@
             <!-- Achievments -->
             <section class="section--page">
                 <h2><img src="assets/images/success.png" alt="success" style="width: 1.5em; height: 1.5em;"> Achievements</h2>
-                <ul id="achievments-list">
+                <ul id="achievements-list">
                     <li>Ranked 5th in College Coding Ninjas
                         coding competition among 500 Participants.</li>
                     <li>AIR 1454 in Leetcode Biweekly Contest out of 0.1M participants.</li>
@@ -209,125 +211,237 @@
                 <div class="card--work-history">
                     <strong><img src="assets/images/cloud.png" alt="cloud" style="width: 1em; height: 1em;"> PREPCLOUD | Cloud Storage</strong>
                     <p>09/2023 - present</p>
-                    <p>
-                        About Project</p>
-                    <ul>
-                        <li>Conduct lab sessions for college juniors, teaching C/C++ programming.</li>
-                        <li>Cover key fundamentals and practical insights to enhance their coding skills.</li>
-                        <li>Deliver personalized mentorship, sharing knowledge and expertise for their academic growth.</li>
-                    </ul>
+                    <p>We are working on a cloud storage platform similar to other Cloud Storage services. The project involves both 
+                        backend and frontend development. The backend, built with Node.js and Express, manages user authentication, 
+                        sign-up, and sign-in functionalities. It also handles data storage using MongoDB. 
+                        User authentication is secured with JWT (JSON Web Tokens) for secure communication.</p>
                 </div>
 
                 <div class="line-break"></div>
             <!-- Work End -->
 
             <br>
+
             <!-- Projects  -->
             <section class="section--page">
-                <h2><img src="assets/images/project.png" alt="Gradutation_cap" style="width: 1.5em; height: 1.5em;"> Projects</h2>
+                <h2><img src="assets/images/project.png" alt="projects" style="width: 1.5em; height: 1.5em;"> Projects</h2>
+            
+                <!-- Add a dropdown menu -->
+                <select id="projectCategory">
+                    <option value="all">All Projects</option>
+                    <option value="aiml">AIML Based Projects</option>
+                    <option value="backend">Backend Based Projects</option>
+                    <option value="gamedev">Game Dev Projects</option>
+                    <option value="big">Mega Projects</option>
+                    <option value="frontend">Frontend Projects</option>
+                    <option value="working">Currently Working</option>
+                </select>
+                <!-- Add a container to hold the projects -->
+                <div class="projects-container">
+                    <div class="card--project aiml backend frontend big">
+                        <a href="csp.html"><span>🌿 </span>Nutri-Nexus - Soil nutrition detection</a>
+                    </div>
 
-                <div class="card--project">
-                    <a href="csp.html"><span>🌿 </span>Nutri-Nexus - Soil nutrition detection</a>
+                    <div class="card--project aiml">
+                        <a href="Air_quality_analysis.html"><span>☁️ </span>Air Quality Analysis - A Guide to Air Pollution</a>
+                    </div>
+    
+                    <div class="card--project aiml">
+                        <a href="object_detection.html" ><span>📹 </span>Object Detection using OpenCV and YoloV3</a>
+                    </div>
+    
+                    <div class="card--project backend frontend">
+                        <a href="emplo_mang.html" ><span>👨🏻‍🦱 </span>Employee Management System - A NoSQL DBMS</a>
+                    </div>
+    
+                    <div class="card--project gamedev">
+                        <a href="ball-blitz.html"><span>⚽ </span>Ball-Blitz Pong Game using C++ Vs studio 2022</a>
+                    </div>
+    
+                    <div class="card--project backend big working">
+                        <a href="linux_shell.html"><span>🐚 </span>Linux Shell - Operating Systems, Linux, Shell</a>
+                    </div>
+    
+                    <div class="card--project aiml">
+                        <a href="ibm_churn.html"><span>📈 </span>Employee Churn Rate Prediction</a>
+                    </div>
+    
+                    <div class="card--project backend">
+                        <a href="multithreading.html"><span>🧵 </span>Multi-threading - C and pthreads</a>
+                    </div>
+    
+                    <div class="card--project gamedev big">
+                        <a href="pacman.html"><span>🟡 </span>Pac Man Clone - CLI Game using C++</a>
+                    </div>
+    
+                    <div class="card--project gamedev frontend">
+                        <a href="mathgame.html"><span>➕ </span>Math Quiz Game using HTML, CSS and Js</a>
+                    </div>
+    
+                    <div class="card--project gamedev">
+                        <a href="catch_ball.html"><span>⚽ </span>Catch the Ball mechanics using Unity with C#</a>
+                    </div>
+    
+                    <div class="card--project backend frontend big working">
+                        <a href="prepCloud.html"><span><img src="assets/images/cloud.png" alt="cloud" style="width: 1em; height: 1em;"></span> PrepCloud - Cloud Storage Service</a>
+                    </div>
                 </div>
-
-                <div class="card--project">
-                    <a href="Air_quality_analysis.html"><span>☁️ </span>Air Quality Analysis - A Guide to Air Pollution</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="object_detection.html" ><span>📹 </span>Object Detection using OpenCV and YoloV3</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="emplo_mang.html" ><span>👨🏻‍🦱 </span>Employee Management System - A NoSQL DBMS</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="ball-blitz.html"><span>⚽ </span>Ball-Blitz Pong Game using C++ Vs studio 2022</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="linux_shell.html"><span>🐚 </span>Linux Shell - Operating Systems, Linux, Shell</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="ibm_churn.html"><span>📈 </span>Employee Churn Rate Prediction</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="multithreading.html"><span>🧵 </span>Multi-threading - C and pthreads</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="pacman.html"><span>🟡 </span>Pac Man Clone - CLI Game using C++</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="mathgame.html"><span>➕ </span>Math Quiz Game using HTML, CSS and Js</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="catch_ball.html"><span>⚽ </span>Catch the Ball mechanics using Unity with C#</a>
-                </div>
-
-                <div class="card--project">
-                    <a href="prepCloud.html"><span><img src="assets/images/cloud.png" alt="cloud" style="width: 1em; height: 1em;"></span> PrepCloud - Cloud Storage Service</a>
-                </div>
-
             </section>
             <!-- Projects End -->
+
             <div class="line-break"></div>
             
-            <!-- Footer  -->
-            <style>
-                body {
-                    margin: 0;
-                    padding: 0;
-                    font-family: Arial, sans-serif;
-                }
-        
-                /* Footer styles */
-                footer {
-                    background-color: #333;
-                    color: #fff;
-                    padding: 20px;
-                    text-align: center;
-                }
-        
-                footer p {
-                    margin: 0;
-                    font-size: 14px;
-                }
-        
-                footer a {
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 16px;
-                }
-        
-                footer a:hover {
-                    text-decoration: underline;
-                }
-        
-                /* Styling for the footer links */
-                .footer-links {
-                    margin-top: 10px;
-                }
-        
-                .footer-links a {
-                    margin: 0 10px;
-                }
-            </style>
 
-            <footer>
+        <!-- Footer -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Footer styles */
+            footer {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: inherit;
+                filter: blur(20px);
+                opacity: 0.7;
+                z-index: -1;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            footer p:hover{
+                color: #ddd;
+            }
+
+            footer a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 13px;
+                transition: 0.4s;
+                margin: 5px;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+
+            footer a:hover {
+                background-color: #fff;
+                color: #333;
+            }
+
+            /* Styling for the footer links */
+            .footer-links {
+                margin-top: 10px;
+            }
+
+            .footer-links a {
+                margin: 0 10px;
+            }
+        </style>
+
+        <footer>
+            <div>
                 <p>&copy; 2023 Advaith</p>
-                <div class="footer-links">
-                    <a href="index.html">Back to Top</a>
-                </div>
-            </footer>
-            <!-- Footer End -->
-
+            </div>
+            <div class="footer-links">
+                <a href="contact.html">Contact</a>
+                <a href="index.html">Back to Top</a>
+                <a href="about.html">About</a>
+            </div>
+        </footer>
+        <!-- Footer End -->
         </div>
 
+        <style>
+            /* Add CSS for the dropdown */
+            .dropdown {
+                font-style: normal;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            #projectCategory {
+                color:#333;
+                padding: 8px;
+                font-size: 16px;
+                width: 200px; /* Adjust the width as needed */
+                border-radius: 8px;
+                border: 1px solid white;
+            }
+
+            /* Hide all projects initially */
+            .projects-container .card--project {
+                display: none;
+                padding: 1em;
+                border-top: 1px solid var(--mainBorderColor);
+            }
+
+            .projects-container .card--project a {
+                color: var(--mainTextColor);
+                transition: 0.3s;
+                display: block;
+            }
+
+            .projects-container .card--project a:hover {
+                color: #7895CB;
+            }
+
+            /* Style the back to top button */
+            /* #backToTop {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgba(51, 51, 51, 0.8);
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            #backToTop:hover {
+                background-color: rgba(51, 51, 51, 1);
+            } */
+        </style>
+
+        <script>
+            document.getElementById('projectCategory').addEventListener('change', function() {
+                let selectedCategory = this.value;
+                let projects = document.querySelectorAll('.card--project');
+
+                projects.forEach(project => {
+                    if (selectedCategory === 'all' || project.classList.contains(selectedCategory)) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        </script>        
     </body>
 </html>

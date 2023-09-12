@@ -84,13 +84,10 @@ margin: 10px 0;
     border-radius: 50%;
     transition: transform 0.3s; 
 }
-  
+
 #profile-pic:hover {
     transform: scale(1.1);
 }
-  
-  
-  
 
 #email{
     color: var(--mainTextColor);
@@ -333,7 +330,6 @@ margin: 10px 0;
 
 .card--project a{
     color: var(--mainTextColor);
-
     transition: 0.3s;
 }
 
