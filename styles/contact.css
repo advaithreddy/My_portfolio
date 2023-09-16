@@ -6,14 +6,10 @@ body {
 }
 
 header, footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 26px;
-}
-
-footer {
-    padding-bottom: 40px; /* Added padding to the bottom of the footer */
 }
 
 header h1 {
@@ -31,17 +27,19 @@ main {
 form {
     max-width: 500px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
 
 label, input, textarea {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 input, textarea {
@@ -57,7 +55,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -67,7 +65,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: rgba(51, 51, 51, 1);
+    background-color: #555;
 }
 
 .contact-image {
@@ -78,7 +76,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 26px;
@@ -88,7 +86,7 @@ footer {
 }
 
 .back-button {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -98,7 +96,6 @@ footer {
     text-decoration: none;
 }
 
-
 .back-button:hover {
-    background-color: rgba(51, 51, 51, 1);
+    background-color: #555;
 }

@@ -349,6 +349,33 @@ margin: 10px 0;
     height: 1px;
 }
 
+/* New Links */
+#pwc-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+#pwc-link:hover{
+    color: #D80032;
+    text-decoration: underline;
+}
+
+#qxai-link{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+#qxai-link:hover{
+    color: #D2DE32;
+    text-decoration: underline;
+}
+
+
+
 /* Added */
 li a {
     position: relative; /* Enable positioning for the pseudo-element */

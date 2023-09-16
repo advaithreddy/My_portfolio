@@ -6,13 +6,13 @@ body {
 }
 
 header, footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 26px;
 }
 
-header h1, footer p {
+header h1 {
     margin: 0;
     font-size: 36px;
 }
@@ -21,7 +21,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .about-content {
@@ -34,8 +34,11 @@ main {
     backdrop-filter: blur(10px);
 }
 
+.about-content section {
+    margin-bottom: 30px;
+}
+
 .about-content h2 {
-    margin-top: 0;
     color: #333;
 }
 
@@ -55,7 +58,7 @@ main {
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 26px;
@@ -65,7 +68,7 @@ footer {
 }
 
 .back-button {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -75,7 +78,6 @@ footer {
     text-decoration: none;
 }
 
-
 .back-button:hover {
-    background-color: rgba(51, 51, 51, 1);
+    background-color: #555;
 }
