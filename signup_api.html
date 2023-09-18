@@ -47,32 +47,37 @@
             <p>To get a local copy up and running, follow these simple steps:</p>
             <ol>
                 <li>Clone the repository
-                    <div class="special-code">
+                    <div class="special-code" onmouseover="showCopyButton(this)" onmouseout="hideCopyButton(this)">
                         git clone https://github.com/YOUR_USERNAME/signup_api.git
-                    </div>                   
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div>                                                          
                 </li>  <br>                            
                 <li>Change into project directory <br>
-                    <div class="special-code">
+                    <div class="special-code" onmouseover="showCopyButton(this)" onmouseout="hideCopyButton(this)">
                         cd signup_api
-                    </div>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div> 
                 </li>
                 <br>
                 <li>install dependencies <br>
-                    <div class="special-code">
+                    <div class="special-code" onmouseover="showCopyButton(this)" onmouseout="hideCopyButton(this)">
                         npm install
-                    </div>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div> 
                 </li>
                 <br>
                 <li>Create a .env file in the root directory with your MongoDB connection URI. For example: <br>
-                    <div class="special-code">
+                    <div class="special-code" onmouseover="showCopyButton(this)" onmouseout="hideCopyButton(this)">
                         MONGODB_URI=mongodb://localhost/your-database-name
-                    </div>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div> 
                 </li>
                 <br>
                 <li>start the server <br>
-                    <div class="special-code">
+                    <div class="special-code" onmouseover="showCopyButton(this)" onmouseout="hideCopyButton(this)">
                         npm start
-                    </div>
+                        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
+                    </div> 
                 </li>
             </ol>  
             <h3>The Server should no be running on PORT : 3000</h3>
@@ -102,5 +107,6 @@
             </pre></p>
             <p><i>Note - Make sure to replace example data with your actual data.</i></p>
         </div>
+        <script src="scripts/main.js"></script>
     </body>
 </html>

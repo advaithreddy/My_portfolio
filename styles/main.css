@@ -396,7 +396,10 @@ li a::before {
     transition: width 0.3s ease; /* Add smooth transition for the width change */
 }
 
+
+/* copy button */
 .special-code {
+    position: relative;
     background-color: var(--mainBorderColor-dark);
     border: 1px solid #131415;
     border-radius: 10px;
@@ -408,6 +411,18 @@ li a::before {
 
 .special-code:hover {
     background-color: #555555; 
+}
+
+.copy-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+}
+
+.special-code:hover .copy-button {
+    display: inline-block;
+    color: black;
 }
 
 
