@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advaith Reddy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="icon" href="assets/images/logo.png">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Back</a>
+            <h1>SignUp and SignIn API endpoint</h1>
+            <div class="line-break"></div>
+            <ul>
+                <li><a href="https://github.com/advaithreddy/signup_api">Source code</a>&nbsp; &nbsp;</span></li>
+            </ul>
+            <h4>User authentication API</h4>
+
+            <summary>Prerequisites</summary>
+            <ul>
+                <li>API end points</li>
+                <li>API tools like Postman API or Insomnia</li>
+                <li>A terminal 🤣🤣</li>
+            </ul>
+            <summary>Description</summary>
+            <p>This is about the SignUp and SignIn API endpoint where made using NodeJS with Express and MongoDB.
+                This API provides endpoints for user sign-up and sign-in. It uses Express.js for the server, 
+                Mongoose for database interactions, and bcrypt for password hashing.
+            </p>
+            <summary>Features</summary>
+            <ul>
+                <li>User sign-up with validation</li>
+                <li>User sign-in with password comparison</li>
+                <li>MongoDB for data storage</li>
+                <li>Secure password hashing</li>
+            </ul>
+            <summary>Execution Instructions</summary>
+            <p>Before you begin, ensure you have met the following requirements:</p>
+            <ul>
+                <li>Node.js and npm installed</li>
+                <li>MongoDB installed and running</li>
+            </ul>    
+            <h2>Getting Started</h2> 
+            <p>To get a local copy up and running, follow these simple steps:</p>
+            <ol>
+                <li>Clone the repository
+                    <div class="special-code">
+                        git clone https://github.com/YOUR_USERNAME/signup_api.git
+                    </div>                   
+                </li>  <br>                            
+                <li>Change into project directory <br>
+                    <div class="special-code">
+                        cd signup_api
+                    </div>
+                </li>
+                <br>
+                <li>install dependencies <br>
+                    <div class="special-code">
+                        npm install
+                    </div>
+                </li>
+                <br>
+                <li>Create a .env file in the root directory with your MongoDB connection URI. For example: <br>
+                    <div class="special-code">
+                        MONGODB_URI=mongodb://localhost/your-database-name
+                    </div>
+                </li>
+                <br>
+                <li>start the server <br>
+                    <div class="special-code">
+                        npm start
+                    </div>
+                </li>
+            </ol>  
+            <h3>The Server should no be running on PORT : 3000</h3>
+
+            <summary>Usage</summary>
+            <p>You can test the API using tools like Insomnia or Postman. Here are the available endpoints:</p>
+            <p><b>POST /api/auth/signup: Create a new user.</b></p>
+            <p><b>Example Request Body: </b>
+            <pre>
+                <code>
+                    {
+                        "name": "John Doe", 
+                        "email": "johndoe@example.com", 
+                        "password": "secretpassword"
+                    }
+                </code>
+            </pre></p>
+            <p><b>POST /api/auth/signin: Sign in with an existing user.</b></p>
+            <p><b>Example Request Body:</b>
+            <pre>
+                <code>
+                    {
+                        "email": "johndoe@example.com",
+                        "password": "secretpassword" 
+                    }
+                </code>
+            </pre></p>
+            <p><i>Note - Make sure to replace example data with your actual data.</i></p>
+        </div>
+    </body>
+</html>

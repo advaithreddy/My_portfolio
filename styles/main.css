@@ -396,6 +396,21 @@ li a::before {
     transition: width 0.3s ease; /* Add smooth transition for the width change */
 }
 
+.special-code {
+    background-color: var(--mainBorderColor-dark);
+    border: 1px solid #131415;
+    border-radius: 10px;
+    text-align: left;
+    padding: 6px;
+    font-family: 'Courier New', monospace;
+    transition: background-color 0.3s; 
+}
+
+.special-code:hover {
+    background-color: #555555; 
+}
+
+
 /* Hover effect styles */
 li a:hover {
     color: #D7BBF5; /* Change the link color on hover */
